@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            align-items: center;
+            padding: 30px;
+            margin: 10mm;
+            line-height: 1.5;
+        }
+        h1{
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+        }
+        .titulo{
+            width: 100%;
+            justify-content: center;
+        }
+        p{
+            text-align: justify;
+        }
+        li{
+            text-align: justify;
+        }
+        .assinatura {
+            border-top: 1px solid #000;
+            margin-top: 40px;
+            padding-top: 5px;
+            width: 250px;
+            text-align: center;
+        }
+        @page{
+            size: a4 portrait;
+            margin-top: 2cm;
+            margin-bottom: 2cm;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Contrato de Locação</h1>
+    <p>
+  <strong>LOCADOR</strong>: <var id="locador"></var>, portador do CPF nº <var id="cpf_locador"></var> residente à <var id="logradouro_locador"></var>, N° <var id="n_locador"></var><var id="complemento_locador"></var>, Bairro: <var id="bairro_locador"></var>, <var id="cidade_locador"></var>/<var id="uf_locador"></var> – CEP <var id="cep_locador"></var>.
+</p>
+<p>
+  <strong>LOCATÁRIO</strong>: <var id="locatario"></var>, portador do CPF nº <var id="cpf_locatario"></var>, residente à <var id="logradouro_locatario"></var>, N° <var id="n_locatario"></var><var id="complemento_locatario"></var>, Bairro: <var id="bairro_locatario"></var>, <var id="cidade_locatario"></var>/<var id="uf_locatario"></var> – CEP <var id="cep_locatario"></var>.
+</p>
+<p>Celebram o presente contrato de locação imobiliária, com as cláusulas e condições seguintes: </p>
+<ol>
+    <li>O LOCADOR cede para locação com fim <var id="finalidade"></var> ao LOCATÁRIO, o imóvel situado no endereço, <var id="logradouro_imovel"></var>, N° <var id="n_imovel"></var><var id="complemento_imovel"></var>, Bairro: <var id="bairro_imovel"></var>, <var id="cidade_imovel"></var>/<var id="uf_imovel"></var> – CEP <var id="cep_imovel"></var>.<br></li>
+    <li id="clausula_finalidade">A locação destina-se ao uso exclusivo como residência e domicilio do LOCATÁRIO.<br></li>
+    <li>O prazo de locação é de <var id="prazo"></var> ano(s) contado a partir de <var id="data_inicio"></var>, limite de tempo em que o imóvel objeto do presente deverá ser restituído independentemente de qualquer notificação ou interpelação sob pena de caracterizar infração contratual.<br></li>
+    <li>O aluguel mensal será de <var id="valor"></var> e deverá ser pago até a data de seu vencimento, todo dia <var id="data_vencimento"></var> do mês seguinte ao vencido, <var id="formas_pgt"></var>.
+        <ol>
+            <li>A impontualidade em no mímimo um dia de atraso acarretará em multa de 10% sobre o valor do aluguel e juros moratórios de 1% ao mês.</li>
+            <li>O pagamento de qualquer dos aluguéis não implica em renúncia do direito de cobrança de eventuais diferenças de aluguéis, de encargos ou impostos que oportunamente não tiverem sidos lançados nos respectivos recibos.</li>
+        </ol>
+    <br></li>
+    <li>O aluguel será reajustado anualmente. Entretanto, se em virtude de lei subsequente vier a ser admitida a correção e periodicidade inferior a prevista na legislação vigente à época de sua celebração, que é anual, concordam as partes desde já e em caráter irrevogável que a correção do aluguel e o seu indexador passará automaticamente a ser feito no menor prazo que for permitido pela lei posterior e pelo maior índice vigente dentre os permitidos pelo Governo Federal e que venha a refletir a variação do período.<br></li>
+    <li>Havendo prorrogação tácita ou expressa do presente contrato o mesmo será reajustado a preço de mercado sem qualquer relação com o patamar aqui pactuado a ser estabelecido pelo LOCADOR, que poderá ainda estipular, de comum acordo com o LOCATÁRIO, o índice de reajuste e periodicidade.<br></li>
+    <li>Nas cobranças judiciais e extrajudiciais de alugueis em atraso os mesmos serão acrescidos de juros de mora, atualização monetária e honorários advocatícios, na base de 20% ( vinte por cento ) sendo que qualquer recebimento feitos pela LOCADOR fora dos prazos e condições convencionais neste contrato, será havido como mera tolerância e não induzirá novação bem como resgate de recibos posteriores não significará quitação de aluguéis e outras obrigações contratuais deixadas de quitar nas épocas certas.<br></li>
+    <li><var id="clausula_finalidade_8"></var>, conforme cláusula 2, não sendo permitida a transferência, sublocação, cessão ou empréstimo no todo ou em parte, sem a prévia e expressa autorização do LOCADOR.<br></li>
+    <li>Além do aluguel são de responsabilidade do LOCATÁRIO as despesas com consumo de luz, água, esgoto, seguro contra incêndio, imposto predial e todas as demais taxas ou impostos, tributos municipais e encargos da locação, que venham a incidir sobre o imóvel, inclusive taxa de condomínio, que deverão ser pagas diretamente pela mesma, o qual ficará obrigada a apresentar os comprovantes de quitação juntamente com o pagamento do aluguel.<br></li>
+    <li>O LOCATÁRIO declara neste ato tomar conhecimento da existência de regras estabelecidas em Convenção de Condominio, de Moradores ou qualquer outra convenção a qual o morador do imóvel está sujeito e compromete-se a respeitá-las e cumpri-las, juntamente com seus familiares e prepostos, sob pena de rescisão contratual.<br></li>
+    <li>Encerrada a locação a entrega das chaves só será processada mediante exibição ao LOCADOR, dos comprovantes de quitação das despesas e encargos da locação referidos nas cláusulas anteriores, inclusive corte final de luz e da entrega de 1 lata de tinta Coral Rende Muito Branco Neve.<br></li>
+    <li>Fica facultado ao LOCADOR ou ao seu representante legal vistoriar o imóvel sempre que julgar necessário.<br></li>
+    <li>O LOCATÁRIO se obriga, sob pena de cometer infração contratual, a comunicar por escrito ao LOCADOR, com antecipação mínima de 30 (trinta) dias, a sua intenção de devolver o imóvel antes do prazo aqui previsto.<br></li>
+    <li>O LOCATÁRIO assume o compromisso de solicitar ao LOCADOR uma vistoria 30 (trinta) dias antes de desocupar o imóvel para ser constatado o estado de conservação do mesmo.<br></li>
+    <li>Quaisquer modificações no imóvel locadas só poderão ser feitas com expressa autorização do LOCADOR. Aderem ao mesmo as benfeitorias sejam elas úteis, necessárias ou voluntárias independente de sua natureza, não cabendo direito de indenização, retenção, compensação ou reembolso. Exceto em caso de acordo comum documentado entre as partes.<br></li>
+    <li>Se no curso da locação vier a ocorrer incêndio ou danos no prédio que demandem obras que impeçam o seu uso normal por mais de 30 (trinta) dias, falência ou insolvência do LOCATÁRIO, bem como desapropriação do imóvel, ficará rescindida de pleno direito a relação locatícia, sem qualquer direito de indenização ou retenção do objeto do presente contrato.<br></li>
+    <li>O LOCATÁRIO autoriza ao LOCADOR desde já, a proceder a sua citação inicial, interpelação, intimação, notificação, ou qualquer outro ato de comunicação processual mediante comunicação por e-mail, whatsapp ou outro formato eletrônico, afora as demais formas previstas em lei.<br></li>
+    <li>Fica convencionado que a parte que infringir o presente contrato em qualquer dos seus termos, se sujeita ao pagamento em benefício da outra, da multa contratual correspondente a 1 (uma) vez o valor do aluguel vigente à época da infração, tantas vezes forem as infrações praticadas, sem prejuízo da resolução contratual e demais comunicações previstas neste instrumento.<br></li>
+    <li>Se o LOCATÁRIO vier a usar da faculdade que lhe confere o contido no artigo 4º da Lei n º 8.245/1991 e devolver o imóvel antes do vencimento do prazo ajustado, pagará a multa compensatória equivalente a 02 (duas) vezes o valor do aluguel vigente, reduzido proporcionalmente ao tempo do contrato já cumprido.<br></li>
+    <li>Salvo declaração escrita do LOCADOR, quaisquer tolerância ou concessões por ela feita não implicam em renúncia de direito ou em alteração contratual, não podendo ser invocada pelo LOCATÁRIO como procedente para se furtar ao cumprimento do contrato.<br></li>
+    <li>Permanecendo o LOCATÁRIO no imóvel após o prazo de desocupação voluntária nos casos de denúncia condicionada, pagará ele o aluguel pena que vier a ser arbitrado na notificação premonitória na forma de que dispõe o artigo 575 do Novo Código Civil Brasileiro, o mesmo ocorrendo no caso de mútuo acordo nos termos do artigo 9, inciso I da Lei n º 8.245/1991, quando a desocupação não se verificar na data convencionada.<br></li>
+    <li>No caso do imóvel ser posto à venda, o LOCATÁRIO declara que não possui interesse em sua aquisição, renunciando expressamente ao eventual direito de preferência e autoriza desde já, a visita de interessados, em horários previamente convencionados.<br></li>
+    <li>O LOCATÁRIO declara, para todos os fins e efeitos de direito, que recebe o imóvel locado em condições plenas de uso, em perfeito estado de conservação, higiene e limpeza, obrigando-se e comprometendo-se a devolvê-lo em iguais condições, independente de qualquer aviso ou notificação prévia, e qualquer que seja o motivo da devolução, sob pena de incorrer nas cominações previstas neste contrato ou estipuladas em lei, além da obrigação de indenizar por danos ou prejuízos decorrentes da inobservância desta obrigação, salvo as deteriorações decorrentes de uso normal do imóvel.<br></li>
+    <li>Em caso de ausência, interdição, recuperação judicial, falência ou insolvência do fiador, declaradas judicialmente, suas obrigações se transferem aos seus herdeiros e/ou sucessores e o LOCATÁRIO se obriga, dentro de 30 (trinta) dias a dar substituto idôneo, a juízo do LOCADOR, ficando aquele em mora e sujeito à multa contratual e despejo, se não o fizer nesses dias de mera tolerância.<br></li>
+    <li>Elegem as partes o foro da comarca de <var id="cidade"></var>, para dirimir quaisquer dúvidas oriundas do presente contrato, renunciando a qualquer outro por mais privilegiado que seja.<br></li>
+</ol>  
+<p>Por estarem justas e contratadas, firmam o presente instrumento particular de contrato de locação, em 2 (duas) vias de igual teor e forma, na presença das testemunhas abaixo assinadas.</p>
+<br>
+<var id="cidade_ass"></var>, <var id="dia"></var> de <var id="mes"></var> de 2025
+<br>
+<br>
+<div style="display: flex; justify-content: space-evenly;">
+    <div class="assinatura"><var id="locador"></var> - ( Locador )</div>
+    <div class="assinatura"><var id="locatario"></var> - ( Locatário )</div>
+</div>
+<br>
+<p>Testemunhas:</p>
+<div style="display: flex; justify-content: space-evenly;">
+    <div class="assinatura">Testemunha 1</div>
+    <div class="assinatura">Testemunha 2</div>
+</div>
+
+</body>
+
+</html>
