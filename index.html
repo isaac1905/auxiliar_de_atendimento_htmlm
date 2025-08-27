@@ -299,7 +299,7 @@
         <button class="app-btn" onclick="acao(5)" disabled>Orçamento</button>
         <button class="app-btn" onclick="reparo_em_placa()">Termo de Reparo em Placa</button>
         <button class="app-btn" onclick="mostrarFormulario('contrato_locacao_form')">Contrato de Locação</button>
-        <button class="app-btn" onclick="mostrarFormulario('form2')">Contrato de Venda Veículos</button>
+        <button class="app-btn" onclick="mostrarFormulario('form2')" disabled>Contrato de Venda Veículos</button>
         <button class="app-btn" onclick="mostrarFormulario('contrato_compra_e_venda_imovel')">Contrato de Venda Imobiliária</button>
       </div>
     </section>
@@ -499,13 +499,16 @@
           <h4>Dados do Vendedor</h4>
           <div class="form-line">
             <input type="text" id="input_vendedor_i" placeholder="Nome do Vendedor" required>
-            <input type="text" id="input_nacionalidade_vendedor_i" placeholder="Nacionalidade" required>
-            <input type="text" id="input_profissao_vendedor_i" placeholder="Profissão" required>
-            <input type="text" id="input_estado_civil_vendedor_i" placeholder="Estado Civil" required>
           </div>
+            
           <div class="form-line">
             <input type="text" id="input_rg_vendedor_i" placeholder="RG" required>
             <input type="text" id="input_cpf_vendedor_i" placeholder="CPF" required>
+          </div>
+          <div class="form-line">
+            <input type="text" id="input_nacionalidade_vendedor_i" placeholder="Nacionalidade" required>
+            <input type="text" id="input_profissao_vendedor_i" placeholder="Profissão" required>
+            <input type="text" id="input_estado_civil_vendedor_i" placeholder="Estado Civil" required>
           </div>
           <div class="form-line">
             <input type="text" id="input_logradouro_vendedor_i" placeholder="Logradouro" required>
@@ -849,6 +852,7 @@
       // Exemplo de dados para preencher o contrato
       const dadosContrato = {
         locador: document.getElementById('input_locador').value,
+        locador_ass: document.getElementById('input_locador').value,
         cpf_locador: document.getElementById('input_cpf_locador').value,
         logradouro_locador: document.getElementById('input_logradouro_locador').value,
         n_locador: document.getElementById('input_n_locador').value,
@@ -858,6 +862,7 @@
         uf_locador: document.getElementById('input_uf_locador').value,
         cep_locador: document.getElementById('input_cep_locador').value,
         locatario: document.getElementById('input_locatario').value,
+        locatario_ass: document.getElementById('input_locatario').value,
         cpf_locatario: document.getElementById('input_cpf_locatario').value,
         logradouro_locatario: document.getElementById('input_logradouro_locatario').value,
         n_locatario: document.getElementById('input_n_locatario').value,
